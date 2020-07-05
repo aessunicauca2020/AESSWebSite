@@ -3006,3 +3006,6 @@ input, select, textarea {
             justify-content: space-between;
         }
     }
+    #page-wrapper #main {
+        text-align: justify !important;
+    }

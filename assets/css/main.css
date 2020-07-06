@@ -3137,13 +3137,13 @@ input, select, textarea {
         display: flex;
         align-items: center;
     }
-    #page-wrapper #main .box header{
+    #page-wrapper #main .box .header-aliados{
         height: 60px;
         display: flex;
         align-items: center;
     }
 
-    #page-wrapper #main article.box.post.hero a.image.featured {
+    #page-wrapper #main article.box.post.hero.aliados a.image.featured {
         margin: -4.5em 0 4.25em -3.5em;
     }
 

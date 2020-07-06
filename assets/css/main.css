@@ -1747,7 +1747,7 @@ input, select, textarea {
 		padding-left: 0;
 	}
 
-		ul.actions li {
+		/* ul.actions li {
 			display: inline-block;
 			margin-left: 1em;
 			padding-left: 0;
@@ -1755,7 +1755,7 @@ input, select, textarea {
 
 			ul.actions li:first-child {
 				margin-left: 0;
-			}
+			} */
 
 /* Links */
 
@@ -2910,8 +2910,7 @@ input, select, textarea {
 	}
 
 
-    /* Modificación de Detalles */
-    /* MAIN */
+    /* Modificación de Detalles para Responsive Desing */
     #header #intro p{
         text-align: justify;
     }
@@ -2944,6 +2943,9 @@ input, select, textarea {
         #main #blog .box p{
             height: 175px;
         }
+        #page-wrapper #main .box .biblio-description.first-row{
+            height: 790px !important;
+        }
 
     }
     @media screen and (min-width:980px){
@@ -2963,6 +2965,10 @@ input, select, textarea {
         #main .comites .box a.button.alt, #main .comites .box li{
             width: 100%;
         }
+        #page-wrapper #main .box .biblio-description.second-row{
+            height: 360px;
+        }
+
 
     }
     @media screen and (max-width:736px){
@@ -2987,6 +2993,23 @@ input, select, textarea {
         #main #blog .box p{
             height: 280px;
         }
+
+        #main .comites .box header{
+            text-align: center;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 0 .5em 0;
+        }
+        #page-wrapper #main .box .biblio-description.two-rows-1st-row{
+            height: 740px;
+        }
+        #page-wrapper #main .box .biblio-description.two-rows-2nd-row{
+            height: 635px;
+        }
+
     }
     @media screen and (min-width:1280px){
         #main #blog .box p{
@@ -2995,17 +3018,135 @@ input, select, textarea {
         #main #blog .box header{
             height: 80px;
         }
-    }
-
-    @media screen and (min-width:736px){
-        #main #blog .box footer{
-            margin: .5em 0 0 0;
+        #page-wrapper #main .box .biblio-description.first-row{
+            height: 800px !important;
         }
-        #main #blog footer ul{
+    }
+    @media screen and (max-width:735px){
+        a.image.featured{
+            padding-left: 15px;
+        }
+
+        article.box.post a.image.featured, a.image.featured.mainimg{
+            padding-left: 22px !important;
+        }
+        article.box.post.hero a.image.featured{
+            padding-left: 22px !important;
+            padding-top: 15px;
+        }
+        #main .comites .box footer{
+            height: 40px;
+        }
+        #main .comites .box footer ul.actions{
+            height: auto;
+        }
+        #page-wrapper #main .box footer{
+            height: 40px;
+        }
+        #page-wrapper #main .box footer ul.actions{
+            height: auto !important;
+        }
+        #main #blog .box.blog footer{
+            margin: .5em 0 0 0;
+            height: 120px;
+        }
+        #main #blog .box.blog header{
+            height: 120px;
+        }
+
+        #page-wrapper #main .box.festival footer{
+            height: 170px;
+        }
+        #page-wrapper #main .box.festival footer ul.actions{
+            height: 100% !important;
+        }
+
+    }
+    @media screen and (min-width:736px){
+
+        a.image.featured.mainimg{
+            margin-bottom: 2em !important;
+        }
+        #main .comites .box footer{
+            height: 20px;
+        }
+        #main .comites .box footer ul.actions{
+            height: auto !important;
+        }
+
+        #page-wrapper #main .box footer{
+            height: 20px;
+        }
+
+        #page-wrapper #main .box footer ul.actions{
+            height: auto;
+        }
+        #main #blog .box.blog footer{
+            margin: .5em 0 0 0;
+            height: 120px;
+        }
+        #page-wrapper #main .box.festival footer{
+            height: 180px;
+        }
+        #page-wrapper #main .box.festival footer ul.actions{
+            height: 100%;
+        }
+        #main #blog .box.blog footer ul li, #main #blog .box.blog footer ul li a{
+            width: 100%;
+        }
+        #main #blog .box.blog footer ul{
             display: flex;
             justify-content: space-between;
+            height: 100%
         }
     }
     #page-wrapper #main {
         text-align: justify !important;
+    }
+    #page-wrapper #main .box a.image.featured{
+        margin: -4.5em 0 1.5em -3.5em;
+    }
+    #page-wrapper #main .box header{
+        margin: 0 0 .5em 0;
+    }
+    #page-wrapper #main .box p{
+        margin-bottom: .5em;
+    }
+    #page-wrapper #main .box footer ul{
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0.5em 0 0 0;
+    }
+    #page-wrapper #main .box footer a.button.alt, #page-wrapper #main .box footer li {
+        width: 100%;
+    }
+    #main .comites .box footer {
+        margin: 1em 0 .5em 0;
+    }
+
+    #page-wrapper #main .box footer {
+        margin: 1em 0 .5em 0;
+    }
+    #page-wrapper #main .box .biblio-position{
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    #page-wrapper #main .box header{
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    #page-wrapper #main article.box.post.hero a.image.featured {
+        margin: -4.5em 0 4.25em -3.5em;
+    }
+
+    #main #blog .box.blog header{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 80px;
     }

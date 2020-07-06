@@ -3060,6 +3060,9 @@ input, select, textarea {
         #page-wrapper #main .box.festival footer ul.actions{
             height: 100% !important;
         }
+        #main article.box.post.hero.seminario header{
+            height: 100px !important;
+        }
 
     }
     @media screen and (min-width:736px){
@@ -3149,4 +3152,18 @@ input, select, textarea {
         justify-content: space-between;
         flex-direction: row;
         height: 80px;
+    }
+    #main article.box.post.hero.seminario .header-seminario{
+        display: block !important;
+        height: 300px !important;
+    }
+    #main article.box.post.hero.seminario ul li a{
+        width: 100%
+    }
+    @media screen and (max-width:735px){
+
+        #main article.box.post.hero.seminario .header-seminario {
+            height: 200px !important;
+        }
+
     }

@@ -3021,6 +3021,9 @@ input, select, textarea {
         #page-wrapper #main .box .biblio-description.first-row{
             height: 800px !important;
         }
+        #page-wrapper #main .box .biblio-description.second-row{
+            height: 390px;
+        }
     }
     @media screen and (max-width:735px){
         a.image.featured{
@@ -3144,6 +3147,11 @@ input, select, textarea {
         display: flex;
         align-items: center;
     }
+    #page-wrapper #main .box .biblio-name{
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
     #page-wrapper #main .box .header-aliados{
         height: 60px;
         display: flex;
@@ -3196,6 +3204,80 @@ input, select, textarea {
         }
         #main article.box.post.hero.seminario .header-seminario {
             height: 340px;
+        }
+
+    }
+
+    /* Comites RD */
+    #page-wrapper #main article.box.post.hero header.comites-info {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    #page-wrapper #main article.box.post.hero .comite-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+
+    #page-wrapper #main article.box.post.hero .comite-cordinator {
+        width: 48%;
+    }
+    #page-wrapper #main article.box.post.hero .comite-imagen {
+        width: 48%;
+        display: flex;
+        align-items: center;
+    }
+    #page-wrapper #main article.box.post.hero .comite-imagen a.image.featured{
+        width: 98%;
+        height:auto;
+        max-height: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        left: 0;
+        top: 0;
+    }
+    #page-wrapper #main article.box.post.hero footer.comite-footer-description{
+        height: auto;
+    }
+
+    #page-wrapper #main article.box.post.hero footer ul.social.comite-social{
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #page-wrapper #main article.box.post.hero footer ul.social.comite-social li{
+        width: auto;
+    }
+
+    /* @media screen and (max-width:980px) and (min-width:736px){
+        #page-wrapper #main article.box.post.hero .comite-imagen a.image.featured{
+            height: 80%;
+
+        }
+        #page-wrapper #main article.box.post.hero .comite-imagen a.image.featured img{
+            height: 100%;
+            object-fit: cover;
+        }
+    } */
+    @media screen and (max-width:980px){
+        #page-wrapper #main article.box.post.hero .comite-description {
+            display: block;
+        }
+        #page-wrapper #main article.box.post.hero .comite-cordinator {
+            width: 98%;
+        }
+        #page-wrapper #main article.box.post.hero .comite-imagen {
+            width: 98%;
+
+        }
+        #page-wrapper #main article.box.post.hero .comite-imagen {
+            padding-left: 8px;
+            height: auto;
+            margin-bottom: 1em;
         }
 
     }

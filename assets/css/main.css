@@ -3060,9 +3060,10 @@ input, select, textarea {
         #page-wrapper #main .box.festival footer ul.actions{
             height: 100% !important;
         }
-        #main article.box.post.hero.seminario header{
-            height: 100px !important;
+        #page-wrapper #main .box footer.festival-footer{
+            height: 120px;
         }
+
 
     }
     @media screen and (min-width:736px){
@@ -3101,6 +3102,12 @@ input, select, textarea {
             display: flex;
             justify-content: space-between;
             height: 100%
+        }
+        #page-wrapper #main .box footer.festival-footer{
+            height: 120px;
+        }
+        #page-wrapper #main .box footer.festival-footer ul.actions{
+            height: 100%;
         }
     }
     #page-wrapper #main {
@@ -3143,8 +3150,10 @@ input, select, textarea {
         align-items: center;
     }
 
-    #page-wrapper #main article.box.post.hero.aliados a.image.featured {
-        margin: -4.5em 0 4.25em -3.5em;
+
+
+    #page-wrapper #main article.box.post.hero.aliados .header-aliados {
+        height: 170px;
     }
 
     #main #blog .box.blog header{
@@ -3154,8 +3163,10 @@ input, select, textarea {
         height: 80px;
     }
     #main article.box.post.hero.seminario .header-seminario{
-        display: block !important;
-        height: 300px !important;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 300px;
     }
     #main article.box.post.hero.seminario ul li a{
         width: 100%
@@ -3163,7 +3174,28 @@ input, select, textarea {
     @media screen and (max-width:735px){
 
         #main article.box.post.hero.seminario .header-seminario {
-            height: 200px !important;
+            height: 220px;
+        }
+
+    }
+
+    @media screen and (max-width:480px){
+
+        #page-wrapper #main article.box.post.hero.aliados .header-aliados {
+            height: 350px;
+        }
+        #main article.box.post.hero.seminario .header-seminario {
+            height: 280px;
+        }
+
+    }
+    @media screen and (max-width:319px){
+
+        #page-wrapper #main article.box.post.hero.aliados .header-aliados {
+            height: 450px;
+        }
+        #main article.box.post.hero.seminario .header-seminario {
+            height: 340px;
         }
 
     }

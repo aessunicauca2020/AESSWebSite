@@ -73,10 +73,7 @@ input, select, textarea {
 }
 
 /* Basic */
-	.resize{
-		width: 10px;
-		height: auto;
-	}
+
 	html {
 		box-sizing: border-box;
 	}
@@ -1899,7 +1896,6 @@ input, select, textarea {
 		overflow: hidden;
 		cursor: default;
 		margin: 0 0 3.25em 0;
-		text-align: center;
 	}
 
 		ul.social li {

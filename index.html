@@ -390,7 +390,9 @@
 				<div class="col-sm-3 wthree-services">
 					<div class="wthree-services-grid">
 						<div class="wthree-services-info">
-							<i class="fa fa-university" aria-hidden="true"></i>
+                            <p  style="font-size: 5rem ; color: white;">
+                                <i class="fab fa-black-tie" aria-hidden="true"></i>
+                            </p>
 							<h4>Comité de emprendimiento</h4>
 							<div class="w3ls-border"> </div>
 						</div>
@@ -406,7 +408,9 @@
 				<div class="col-sm-3 wthree-services">
 					<div class="wthree-services-grid">
 						<div class="wthree-services-info">
-							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <p  style="font-size: 5rem ; color: white;">
+                                <i class="fas fa-satellite" aria-hidden="true"></i>
+                            </p>
 							<h4>Comité de radioastronomía</h4>
 							<div class="w3ls-border"> </div>
 						</div>
@@ -423,7 +427,9 @@
 				<div class="col-sm-3 wthree-services">
 					<div class="wthree-services-grid">
 						<div class="wthree-services-info">
-							<i class="fa fa-black-tie" aria-hidden="true"></i>
+                            <p  style="font-size: 5rem ; color: white;">
+                                <i class="fas fa-space-shuttle" aria-hidden="true"></i>
+                            </p>
 							<h4>Comité de márketing</h4>
 							<div class="w3ls-border"> </div>
 						</div>
@@ -442,7 +448,9 @@
 				<div class="col-sm-3 wthree-services">
 					<div class="wthree-services-grid">
 						<div class="wthree-services-info">
-							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <p  style="font-size: 5rem ; color: white;">
+                                <i class="fas fa-space-shuttle" aria-hidden="true"></i>
+                            </p>
 							<h4>Comité de eventos</h4>
 							<div class="w3ls-border"> </div>
 						</div>
@@ -461,7 +469,9 @@
 				<div class="col-sm-3 wthree-services">
 					<div class="wthree-services-grid">
 						<div class="wthree-services-info">
-							<i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+                            <p  style="font-size: 5rem ; color: white;">
+                                <i class="fas fa-user-astronaut" aria-hidden="true"></i>
+                            </p>
 							<h4>Comité del Observatorio Astronómico</h4>
 							<div class="w3ls-border"> </div>
 						</div>
@@ -477,7 +487,9 @@
 				<div class="col-sm-3 wthree-services">
 					<div class="wthree-services-grid">
 						<div class="wthree-services-info">
-							<i class="fa fa-sun-o" aria-hidden="true"></i>
+                            <p  style="font-size: 5rem ; color: white;">
+                                <i class="fas fa-meteor" aria-hidden="true"></i>
+                            </p>
 							<h4>Comité Andrómeda</h4>
 							<div class="w3ls-border"> </div>
 						</div>
@@ -493,7 +505,9 @@
 				<div class="col-sm-3 wthree-services">
 					<div class="wthree-services-grid">
 						<div class="wthree-services-info">
-							<i class="fa fa-percent" aria-hidden="true"></i>
+                            <p  style="font-size: 5rem ; color: white;">
+                                <i class="fas fa-space-shuttle" aria-hidden="true"></i>
+                            </p>
 							<h4>Comité aerospacial</h4>
 							<div class="w3ls-border"> </div>
 						</div>
@@ -509,7 +523,9 @@
 				<div class="col-sm-3 wthree-services">
 					<div class="wthree-services-grid">
 						<div class="wthree-services-info">
-							<i class="fa fa-university" aria-hidden="true"></i>
+                            <p  style="font-size: 5rem; color: white;">
+                                <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                            </p>
 							<h4>Voluntarios regionales</h4>
 							<div class="w3ls-border"> </div>
 						</div>
@@ -554,7 +570,7 @@
 <!-- fin organización -->
 
 <!-- gallery -->
-<div class="team-bottom gallery" id="gallery">
+<!-- <div class="team-bottom gallery" id="gallery">
 			<div class="heading">
 				<h3>gallery</h3>
 			</div>
@@ -752,7 +768,7 @@
 				</ul>
 			</div>
 		<div class="clearfix"></div>
-</div>
+</div> -->
 <!-- //gallery -->
 
 	<!-- BLOG -->
@@ -1113,6 +1129,7 @@
 <!-- //Admission form -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 
 <!-- subscribe section -->
@@ -1124,9 +1141,9 @@
 				de divulgación científica, entre muchos otros.
 			</p>
 		</div>
-		<form action="#" method="post">
-			<input type="email" name="email" placeholder="Ingresa tu correo.." v-model="from_email">
-			<input type="submit" value="Subscribirte" @click="enviar_suscripcion">
+		<form id='form-subscriber'>>
+			<input type="email" placeholder="Ingresa tu correo.." name="from_email">
+			<input type="submit" value="Subscribirte" onclick="send_subscriber()">
 		</form>
 	</div>
 </div>
@@ -1145,11 +1162,11 @@
 			<h4></h4>
 			-->
 		</div>
-			<form id='' action="#" method="post">
+			<form id='form-contact'>
                 <div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="control-group form-group">
 						<div class="controls">
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Ingrese su nombre" placeholder="Nombre*"><i class="fa fa-user" aria-hidden="true" v-model="from_name"></i>
+                            <input name="from_name" type="text" class="form-control" id="name" required data-validation-required-message="Ingrese su nombre" placeholder="Nombre*"><i class="fa fa-user" aria-hidden="true" ></i>
                             <p class="help-block"></p>
                         </div>
                     </div>
@@ -1157,14 +1174,14 @@
 				<div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="control-group form-group">
                         <div class="controls">
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Ingrese su correo electrónico." placeholder="Corrreo*"><i class="fa fa-envelope" aria-hidden="true" v-model="from_email"></i>
+                            <input  name="from_email" type="email" class="form-control" id="email" required data-validation-required-message="Ingrese su correo electrónico." placeholder="Corrreo*"><i class="fa fa-envelope" aria-hidden="true"></i>
                         </div>
                     </div>
 				</div>
                 <div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="control-group form-group">
 						<div class="controls">
-                            <input type="text" class="form-control" id="name1" required data-validation-required-message="Ingrese su teléfono celular" placeholder="Celular*"><i class="fa fa-phone" aria-hidden="true" v-model="from_celphone"></i>
+                            <input name="from_celphone" type="text" class="form-control" id="name1" required data-validation-required-message="Ingrese su teléfono celular" placeholder="Celular*"><i class="fa fa-phone" aria-hidden="true" ></i>
                             <p class="help-block"></p>
                         </div>
                     </div>
@@ -1173,14 +1190,14 @@
 				<div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="control-group form-group">
                         <div class="controls">
-                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Por favor escriba aquí su mensaje" maxlength="999" style="resize:none" placeholder="Mensaje*" v-model="message"></textarea>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Por favor escriba aquí su mensaje" maxlength="999" style="resize:none" placeholder="Mensaje*" name="message"></textarea>
                         </div>
                     </div>
 				</div>
                 <div id="success"></div>
                 <!-- For success/fail messages -->
                 <div class="col-lg-12 col-md-12 col-sm-12 center">
-					<button type="submit" class="btn btn-primary" @click="enviar_mensaje">Enviar mensaje</button>
+					<button type="submit" class="btn btn-primary" onclick="send_contact()">Enviar mensaje</button>
 				</div>
 				<div class="clearfix"></div>
             </form>
@@ -1193,83 +1210,58 @@
       emailjs.init("user_R81K2Ude3Ns4Xv5QeBZWd");
    })();
 
-    var myform = $("form#myform");
-    myform.submit(function(event){
-    event.preventDefault();
 
-    var params = myform.serializeArray().reduce(function(obj, item) {
-        obj[item.name] = item.value;
-        return obj;
-    }, {});
+   function send_subscriber(){
+       var myform = $("form#form-subscriber");
+       myform.submit(function(event){
+       event.preventDefault();
 
-    // Change to your service ID, or keep using the default service
-    var service_id = "default_service";
 
-    var template_id = "template_TPNNqZK1";
-    myform.find("button").text("Sending...");
-    emailjs.send(service_id, template_id, params)
-    .then(function(){
-        alert("Sent!");
-        myform.find("button").text("Send");
-    }, function(err) {
-        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-        myform.find("button").text("Send");
-    });
 
-    return false;
-    });
-            (function(){
-                emailjs.init("user_R81K2Ude3Ns4Xv5QeBZWd");
-             })();
-            const vue = new Vue({
-                el: '#app',
-                data(){
-                    return {
-                        from_name: '',
-                        from_email: '',
-                        message: '',
-                        from_celphone: '',
-                    }
-                },
-                methods: {
-                    enviar_mensaje(){
-                        let data = {
-                            from_email: this.from_email,
-                            from_name: this.from_name,
-                            from_celphone: this.fromcelphonel,
-                            message: this.message,
-                        };
+       // Change to your service ID, or keep using the default service
+       var service_id = "aessunicauca2020";
 
-                        emailjs.send("aessunicauca2020","template_TPNNqZK1", data)
-                        .then(function(response) {
-                            if(response.text === 'OK'){
-                                alert('El correo se ha enviado de forma exitosa');
-                            }
-                           console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-                        }, function(err) {
-                            alert('Ocurrió un problema al enviar el correo');
-                           console.log("FAILED. error=", err);
-                        });
-                    },
-                    enviar_suscripcion(){
-                        let data = {
-                            from_email: this.from_email,
-                            from_email: this.from_email,
-                        };
+       var template_id = "new_subscriber";
+       emailjs.sendForm(service_id, template_id, myform[0])
+       .then(function(){
+           alert("Sent!");
 
-                        emailjs.send("aessunicauca2020","template_TPNNqZK1", data)
-                        .then(function(response) {
-                            if(response.text === 'OK'){
-                                alert('El correo se ha enviado de forma exitosa');
-                            }
-                           console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-                        }, function(err) {
-                            alert('Ocurrió un problema al enviar el correo');
-                           console.log("FAILED. error=", err);
-                        });
-                    }
-                }
-            });
+       }, function(err) {
+           alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+
+       });
+
+       return false;
+       });
+   }
+
+    function send_contact(){
+        var myform = $("form#form-contact");
+        myform.submit(function(event){
+        event.preventDefault();
+
+
+        // Change to your service ID, or keep using the default service
+        var service_id = "aessunicauca2020";
+
+        var template_id = "template_TPNNqZK1";
+        myform.find("button").text("Sending...");
+        emailjs.sendForm(service_id, template_id, myform[0])
+        .then(function(){
+            alert("Sent!");
+            myform.find("button").text("Send");
+        }, function(err) {
+            alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+            myform.find("button").text("Send");
+        });
+
+        return false;
+        });
+    }
+
+
+
+
 </script>
 <!-- map -->
 <div class="map">
